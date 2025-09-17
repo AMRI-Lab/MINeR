@@ -10,10 +10,10 @@ This repo holds the codes for MINeR.
 To run the reconstruction demo, the following dependencies are required:
 
 - Python 3.10  
-- PyTorch 2.1.0  
+- PyTorch 2.0.0  
 - tinycudann 1.7  
-- numpy 1.23.5  
-- nibabel 5.1.0  
+- numpy 1.22.4  
+- nibabel 5.3.2  
 - (optional) matplotlib, tensorboard, h5py
 
 ---
