@@ -26,11 +26,12 @@ Full datasets can be downloaded from the **HCP (Human Connectome Project)** data
 ---
 
 ## 3. Files Descriptions
+```
 MINeR/
 ├── run_demo.py # Demo script for training & interpolation
 ├── MINeR.pyc # Compiled core implementation
 └── demo_data/ # Toy undersampled DWI data
-
+```
 ---
 
 ## 4. Usage
