@@ -22,3 +22,9 @@ To run the reconstruction demo, the following dependencies are required:
 
 This repo provides a **toy undersampled demo dataset** in `demo_data/`.  
 Full datasets can be downloaded from the **HCP (Human Connectome Project)** database.
+
+---
+
+## 3. Usage
+python main.py --mode train --demo_dir demo_data --output_dir outputs
+python main.py --mode infer --demo_dir demo_data --checkpoint outputs/model.pt --output_dir outputs
