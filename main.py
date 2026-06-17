@@ -258,7 +258,7 @@ def infer(args):
 
     model.load_state_dict(checkpoint["model_state_dict"])
 
-    out_path = output_dir / "pred_22dirs.nii.gz"
+    out_path = output_dir / "pred_dwi.nii.gz"
 
     save_prediction(
         model=model,
