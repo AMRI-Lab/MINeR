@@ -26,5 +26,5 @@ Full datasets can be downloaded from the **HCP (Human Connectome Project)** data
 ---
 
 ## 3. Usage
-python main.py --mode train --demo_dir demo_data --output_dir outputs
-python main.py --mode infer --demo_dir demo_data --checkpoint outputs/model.pt --output_dir outputs
+python main.py --mode train --demo_dir demo_data --output_dir outputs.
+python main.py --mode infer --demo_dir demo_data --checkpoint outputs/model.pt --output_dir outputs.
