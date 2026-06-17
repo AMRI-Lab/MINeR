@@ -22,21 +22,3 @@ To run the reconstruction demo, the following dependencies are required:
 
 This repo provides a **toy undersampled demo dataset** in `demo_data/`.  
 Full datasets can be downloaded from the **HCP (Human Connectome Project)** database.
-
----
-
-## 3. Files Descriptions
-```
-MINeR/
-├── run_demo.py # Demo script for training & interpolation
-├── MINeR.pyc # Compiled core implementation
-└── demo_data/ # Toy undersampled DWI data
-```
----
-
-## 4. Usage
-
-To test the performance of MINeR, run the following command:
-
-```bash
-python run_demo.py --gpu 0 --epochs 1000 --summary_epoch 200
