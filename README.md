@@ -16,7 +16,7 @@ interpolation loss in the log-signal domain (Eqs. 6-9).
 
 To run the reconstruction demo, the following dependencies are required:
 
-- Python 3.10  
+- Python 3.8
 - PyTorch 2.0.0  
 - tinycudann 1.7  
 - numpy 1.22.4  
