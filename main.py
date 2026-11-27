@@ -20,6 +20,14 @@ The demo data in ``demo_data`` is slice 69 of the b=1000 shell:
 
 Metrics are computed on the full image.
 """
+# Sampling condition: each interpolated direction m must lie on the great-circle
+# arc between two sampled directions a and b, i.e. alpha = theta(a,m)/theta(a,b)
+# must be in [0, 1] with a small out-of-plane deviation. For the 6 -> 30 setup
+# used here, the interpolated directions are 12-41 deg from the nearest sampled
+# direction and the sampled pairs span 43-77 deg; beyond roughly 40-45 deg to the
+# nearest sample (or ~80 deg between samples) the log-linear interpolation
+# assumption and the reconstruction accuracy degrade, so more sampled directions
+# or an angular physical model are required.
 
 import argparse
 import os
