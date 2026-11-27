@@ -34,7 +34,7 @@ Full datasets can be downloaded from the **HCP (Human Connectome Project)** data
 
 ## 3. Quick start
 ```bash
-cd MINeR_v2
+cd MINeR
 python main.py --mode train                              # 800 epochs
 python main.py --mode infer --ckpt runs/demo/model.pkl   # 30-direction output
 python compare_metrics.py --gt demo_data/dwi_all.nii.gz  # metrics + figures
