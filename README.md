@@ -1,5 +1,4 @@
 # MINeR
-
 Official code for **"MINeR: Direction-modulated implicit neural representation enables ultrafast multi-shell diffusion MRI"**  
 This repo holds the codes for MINeR.
 
@@ -9,6 +8,8 @@ generates the first-layer weight of the base network,
 `W1 = L2norm(tanh(U V))` (paper Eq. 5), and the remaining layers are shared
 across directions. Training uses masked MSE plus a geometry-guided
 interpolation loss in the log-signal domain (Eqs. 6-9).
+
+
 ---
 
 ## 1. Environmental Requirements
