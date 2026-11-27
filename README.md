@@ -3,6 +3,12 @@
 Official code for **"MINeR: Direction-modulated implicit neural representation enables ultrafast multi-shell diffusion MRI"**  
 This repo holds the codes for MINeR.
 
+Direction-modulated hash INR for DWI interpolation (6 -> 30 directions).
+A hash grid encodes `(x, y)`; a direction latent drives a hypernetwork that
+generates the first-layer weight of the base network,
+`W1 = L2norm(tanh(U V))` (paper Eq. 5), and the remaining layers are shared
+across directions. Training uses masked MSE plus a geometry-guided
+interpolation loss in the log-signal domain (Eqs. 6-9).
 ---
 
 ## 1. Environmental Requirements
@@ -25,8 +31,10 @@ Full datasets can be downloaded from the **HCP (Human Connectome Project)** data
 
 ---
 
-## 3. Usage
-python main.py --mode train --demo_dir demo_data --output_dir outputs
-
-
-python main.py --mode infer --demo_dir demo_data --checkpoint outputs/model.pt --output_dir outputs
+## 3. Quick start
+```bash
+cd MINeR_v2
+python main.py --mode train                              # 800 epochs
+python main.py --mode infer --ckpt runs/demo/model.pkl   # 30-direction output
+python compare_metrics.py --gt demo_data/dwi_all.nii.gz  # metrics + figures
+```
